@@ -1,0 +1,80 @@
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    z-index: 3;
+}
+.nav-bar-logo {
+    width: 150px;
+}
+.nav-bar-links > a {
+    color: #886403;
+}
+.hero {
+    height: 28vh;
+    position: relative;
+}
+.hero > img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.hero > p {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 11vh;
+}
+.body {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.content-nav-bar {
+    width: 60vw;
+    position: sticky;
+    top: 100px;
+    z-index: 2;
+    height: fit-content;
+}
+.content-nav-bar-link {
+    font-weight: 600;
+    color: #886403;
+    line-height: 35px;
+    margin-left: 70px;
+}
+.content {
+    padding-left: 100px;
+    padding-right: 180px;
+    border-left: #886403 solid;
+}
+.content-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #886403;
+    margin-top: 0;
+}
+.team-list-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.member-image {
+    width: 180px;
+    margin-bottom: 10px;
+    box-shadow: -5px 5px 5px rgb(146, 146, 146);
+
+}
+.member-details > p {
+    color: #886403;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+.member-name {
+    font-weight: 600;
+}

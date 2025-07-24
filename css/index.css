@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     color: white;
-    height: 100vh;
+    height: 103vh;
 }
 .nav-bar-and-content {
     width: 100%;
@@ -20,12 +20,12 @@
 .hero-main-content {
     display: flex;
     align-items: center;
-    margin-top: 200px;
-    margin-left: 70px;
+    margin-top: 20vh;
+    margin-left: 7vw;
 }
 .hero-text-backslash > p {
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 75px;
+    font-weight: 500;
     line-height: 0%;
 }
 .hero-main-context-text {
@@ -45,6 +45,7 @@
 }
 .hero-footer-text > p {
     font-weight: 600;
+    font-size: 18px;
     text-align: center;
 }
 .hero-footer-arrow {
@@ -76,12 +77,13 @@
 }
 .main-content-heading {
     color: #886403;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 0;
 }
 .main-content-writeup {
-    line-height: 23px !important;
+    font-size: 16px;
+    line-height: 25px !important;
 }
 .contact-us {
     margin-top: 80px;
@@ -98,4 +100,71 @@
 }
 .font-big {
     font-size: 20px;
+}
+
+/* Mobile Responsive CSS */
+@media (max-width: 1024px) {
+    .hero-main-content {
+        margin-top: 5vh;
+    }
+    .hero-text-backslash > p {
+        display: none;
+    }
+    .hero-main-context-text-big {
+        font-size: 60px;
+    }
+    .hero-main-context-text-small {
+        font-size: 35px;
+    }
+    .hero-footer {
+        display: none;
+    }
+    .hero-and-nav-bar {
+        height: 35vh;
+    }
+    .main-content-img {
+        display: none;
+    }
+    .main-content-body {
+        display: none;
+    }
+    .main-content-heading {
+        font-size: 50px;
+        text-align: center;
+        line-height: normal;
+    }
+    .main-content-writeup {
+        font-size: 18px;
+        padding: 0 100px;
+        line-height: 60px !important;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero-main-content {
+        margin-top: 20vh;
+        margin-left: 7vw;
+    }
+    .hero-text-backslash > p {
+        font-size: 90px;
+        font-weight: 500;
+    }
+    .hero-main-context-text-big {
+        font-size: 40px;
+    }
+    .hero-main-context-text-small {
+        font-size: 24px;
+    }
+    .hero-footer {
+        margin-top: 250px;
+    }
+    .hero-footer-text > p {
+        font-size: 20px;
+    }
+    .main-content-heading {
+        font-size: 30px;
+    }
+    .main-content-writeup {
+        font-size: 20px;
+    }
 }

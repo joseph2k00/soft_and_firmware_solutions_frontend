@@ -25,7 +25,7 @@
     z-index: 2;
     color: white;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     width: 100%;
     text-align: center;
     margin-top: 11vh;
@@ -36,16 +36,17 @@
     margin-bottom: 40px;
 }
 .content-nav-bar {
-    width: 60vw;
+    width: 80vw;
     position: sticky;
-    top: 100px;
+    top: 110px;
     z-index: 2;
     height: fit-content;
 }
 .content-nav-bar-link {
+    font-size: 16px;
     font-weight: 600;
     color: #886403;
-    line-height: 35px;
+    line-height: 30px;
     margin-left: 70px;
 }
 .content {
@@ -54,10 +55,12 @@
     border-left: #886403 solid;
 }
 .content-heading {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: #886403;
-    margin-top: 0;
+}
+.content-writeup {
+    font-size: 16px;
 }
 .team-list-row {
     display: flex;
@@ -74,7 +77,31 @@
     color: #886403;
     text-align: center;
     margin: 0 0 0 0;
+    font-size: 16px;
 }
 .member-name {
     font-weight: 600;
+}
+
+@media (min-width: 1600px) {
+    .hero > p {
+        font-size: 40px;
+    }
+    .content-nav-bar {
+        top: 100px;
+        width: 80vw;
+    }
+    .content-nav-bar-link {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .content-heading {
+        font-size: 30px;
+    }
+    .content-writeup {
+        font-size: 20px;
+    }
+    .member-details > p {
+        font-size: 20px;
+    }
 }

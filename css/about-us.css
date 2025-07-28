@@ -12,11 +12,11 @@
     color: #886403;
 }
 .hero {
-    height: 28vh;
+    height: 19vh;
     position: relative;
+    overflow: hidden;
 }
 .hero > img {
-    width: 100%;
     position: absolute;
     z-index: 1;
 }
@@ -28,7 +28,8 @@
     font-size: 30px;
     width: 100%;
     text-align: center;
-    margin-top: 11vh;
+    align-self: anchor-center;
+    /* margin-top: 8vh; */
 }
 .body {
     display: flex;
@@ -43,9 +44,6 @@
     height: fit-content;
 }
 .content-nav-bar-link {
-    font-size: 16px;
-    font-weight: 600;
-    color: #886403;
     line-height: 30px;
     margin-left: 70px;
 }
@@ -53,14 +51,6 @@
     padding-left: 100px;
     padding-right: 180px;
     border-left: #886403 solid;
-}
-.content-heading {
-    font-size: 22px;
-    font-weight: 600;
-    color: #886403;
-}
-.content-writeup {
-    font-size: 16px;
 }
 .team-list-row {
     display: flex;
@@ -74,13 +64,35 @@
 
 }
 .member-details > p {
-    color: #886403;
     text-align: center;
     margin: 0 0 0 0;
-    font-size: 16px;
 }
-.member-name {
-    font-weight: 600;
+
+@media (max-width: 1024px) {    
+    .nav-bar-logo {
+        width: 270px;
+    }
+    .content-nav-bar {
+        display: none;
+    }
+    .content {
+        border: none;
+    }
+    .hero > p {
+        font-size: 70px;
+    }
+    .team-list-row {
+        display: block;
+    }
+    .member-image {
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .member-card {
+        margin-bottom: 100px;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -94,12 +106,6 @@
     .content-nav-bar-link {
         font-size: 20px;
         line-height: 40px;
-    }
-    .content-heading {
-        font-size: 30px;
-    }
-    .content-writeup {
-        font-size: 20px;
     }
     .member-details > p {
         font-size: 20px;

@@ -2,7 +2,9 @@
     width: 100%;
     position: relative;
     color: white;
-    height: 103vh;
+    height: 100vh;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 .nav-bar-and-content {
     width: 100%;
@@ -14,7 +16,6 @@
     z-index: 1;
     padding: 0;
     margin: 0;
-    width: 100%;
     object-fit: cover;
 }
 .hero-main-content {
@@ -44,8 +45,6 @@
     margin-top: 200px;
 }
 .hero-footer-text > p {
-    font-weight: 600;
-    font-size: 18px;
     text-align: center;
 }
 .hero-footer-arrow {
@@ -75,16 +74,6 @@
 .main-content-img {
     width: 40%;
 }
-.main-content-heading {
-    color: #886403;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 0;
-}
-.main-content-writeup {
-    font-size: 16px;
-    line-height: 25px !important;
-}
 .contact-us {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -96,31 +85,27 @@
     margin-left: auto;
     margin-right: auto;
     width: 30%;
-    line-height: 23px !important;
-}
-.font-big {
-    font-size: 20px;
 }
 
 /* Mobile Responsive CSS */
 @media (max-width: 1024px) {
     .hero-main-content {
-        margin-top: 5vh;
+        margin-top: 20vh;
     }
     .hero-text-backslash > p {
-        display: none;
+        font-size: 150px;
     }
     .hero-main-context-text-big {
-        font-size: 60px;
+        font-size: 80px;
     }
     .hero-main-context-text-small {
-        font-size: 35px;
+        font-size: 55px;
     }
     .hero-footer {
         display: none;
     }
     .hero-and-nav-bar {
-        height: 35vh;
+        height: 1500px;
     }
     .main-content-img {
         display: none;
@@ -128,15 +113,14 @@
     .main-content-body {
         display: none;
     }
-    .main-content-heading {
-        font-size: 50px;
-        text-align: center;
-        line-height: normal;
-    }
     .main-content-writeup {
-        font-size: 18px;
         padding: 0 100px;
-        line-height: 60px !important;
+    }
+    .contact-us > p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
     }
 }
 
@@ -159,12 +143,6 @@
         margin-top: 250px;
     }
     .hero-footer-text > p {
-        font-size: 20px;
-    }
-    .main-content-heading {
-        font-size: 30px;
-    }
-    .main-content-writeup {
         font-size: 20px;
     }
 }
